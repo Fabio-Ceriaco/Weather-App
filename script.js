@@ -20,7 +20,7 @@ async function getWeather() {
     if (data.cod === "404") {
       weatherInfo.innerHTML = "City not found.";
     } else {
-      displayweather(data);
+      displayWeather(data);
     }
   } catch (error) {
     weatherInfo.innerHTML = "Error when searching for weather information.";
